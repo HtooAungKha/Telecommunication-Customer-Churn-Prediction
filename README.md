@@ -151,7 +151,7 @@ Telecommunication-Customer-Churn-Prediction/
 Clone the repository and install the required Python packages.
 
 ```bash
-git clone <repository-url>
+git clone <repository-url>](https://github.com/HtooAungKha/Telecommunication-Customer-Churn-Prediction.git)
 cd telco-churn-project
 
 pip install -r requirements.txt
