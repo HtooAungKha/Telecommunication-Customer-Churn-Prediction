@@ -10,10 +10,9 @@
 
 ## About the Project
 
-Keeping existing customers is important for any business, especially telecommunication companies. In this project, we will build machine learning models to predict whether a customer is likely to leave the company based on their account information and the services they use.
+Customer churn is a common problem for telecommunication companies because losing customers means losing revenue. In this project, we are using machine learning to predict whether a customer is likely to leave the company based on their account information and the services they use.
 
-Our goal is to compare different machine learning models and see which one gives the best prediction. We also want to understand which customer features are most related to customer churn.
-
+We are building several machine learning models and comparing their performance to find the one that predicts customer churn the best.
 ---
 
 ## Dataset
@@ -38,6 +37,24 @@ The dataset contains information for more than 7,000 customers, including:
 
 ---
 
+## Project Progress
+
+### Notebook 1 – Data Exploration
+
+
+Completed:
+
+- Loaded and explored the dataset
+- Checked data types and missing values
+- Analyzed the distribution of customer churn
+- Visualized important features using charts
+- Looked for patterns and relationships in the data
+- Identified data quality issues before preprocessing
+
+---
+
+### Notebook 2 – Data Preprocessing
+
 ## Project Goals
 
 - Explore and understand the dataset
@@ -48,15 +65,29 @@ The dataset contains information for more than 7,000 customers, including:
 
 ---
 
-## Models
+### Notebook 3 – Model Training
 
-We plan to compare the following models:
+In Progress
+
+Models to be trained:
 
 - Logistic Regression
 - Decision Tree
 - Random Forest
 - Multi-Layer Perceptron (MLP)
-- LSTM
+- LSTM (if time allows)
+
+---
+
+### Notebook 4 – Model Evaluation
+
+Planned:
+
+- Compare model performance
+- Generate confusion matrices
+- Plot ROC curves
+- Compare evaluation metrics
+- Select the best-performing model
 
 ---
 
@@ -78,33 +109,39 @@ We will evaluate each model using:
 - Python
 - Pandas
 - NumPy
+- Scikit-learn
 - Matplotlib
 - Seaborn
-- Scikit-learn
+- Joblib
+- Jupyter Notebook
 
 ---
 
 ## Project Structure
 
 ```text
-telco-churn-project/
+Telecommunication-Customer-Churn-Prediction/
 │
-├── README.md
-├── requirements.txt
-├── telco_churn.csv
+├── DataSet/
+│   ├── processed/
+│   │   ├── telco_churn_train.csv
+│   │   ├── telco_churn_validation.csv
+│   │   └── telco_churn_test.csv
+│   │
+│   └── Telco-Customer-Churn.csv
 │
-├── notebooks/
+├── models/
+│   └── preprocessor.joblib
+│
+├── Notebooks/
 │   ├── 01_data_exploration.ipynb
 │   ├── 02_data_preprocessing.ipynb
 │   ├── 03_model_training.ipynb
 │   └── 04_model_evaluation.ipynb
 │
-├── results/
-│   ├── figures/
-│   └── model_results.csv
-│
-└── report/
-    └── final_paper.docx
+├── README.md
+├── requirements.txt
+└── .gitignore
 ```
 
 ---
@@ -119,12 +156,6 @@ cd telco-churn-project
 
 pip install -r requirements.txt
 ```
-
----
-
-## Expected Outcome
-
-By the end of this project, we hope to find the model that predicts customer churn the best and identify the customer features that have the biggest impact on churn. This project will also help us gain more experience with data preprocessing, model training, and model evaluation.
 
 ---
 
