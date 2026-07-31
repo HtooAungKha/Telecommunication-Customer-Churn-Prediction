@@ -14,7 +14,7 @@ We are building several machine learning models and comparing their performance 
 
 Customer churn is a major challenge for telecommunication companies because losing customers leads to lost revenue. In this project, we use machine learning to predict whether a customer is likely to leave the company based on their account information and the services they use.
 
-We compare several machine learning models to find the one that gives the best prediction performance.
+The project follows a complete machine learning workflow, including data exploration, preprocessing, model training, hyperparameter tuning, and model evaluation.
 ---
 
 ## Dataset
@@ -49,9 +49,10 @@ Completed:
 - Loaded and explored the dataset
 - Checked data types and missing values
 - Analyzed the distribution of customer churn
+- Performed outlier analysis
 - Visualized important features using charts
-- Looked for patterns and relationships in the data
-- Identified data quality issues before preprocessing
+- Looked for relationships between customer attributes and churn
+- Summarized key findings from the dataset
 
 ---
 
@@ -60,12 +61,13 @@ Completed:
 Completed:
 
 - Cleaned the `TotalCharges` column
+- Handled missing values using median imputation
 - Removed unnecessary columns
 - Encoded the target variable
 - Split the dataset into training, validation, and test sets
 - Encoded categorical features
 - Scaled numerical features
-- Saved the processed datasets
+- Verified the processed datasets
 - Saved the preprocessing pipeline
 
 ---
@@ -80,6 +82,9 @@ Completed:
 - Trained Random Forest
 - Trained Multi-Layer Perceptron (MLP)
 - Compared the models using the validation set
+- Performed hyperparameter tuning
+- Applied regularization techniques
+- Plotted the MLP training loss
 - Saved the trained models
 - Saved the validation results
 
@@ -123,6 +128,19 @@ The models are compared using:
 - F1-Score
 - ROC-AUC Score
 - Confusion Matrix
+
+---
+
+## Machine Learning Workflow
+
+The project follows these steps:
+
+1. Data Exploration
+2. Data Preprocessing
+3. Model Training
+4. Hyperparameter Tuning
+5. Model Evaluation
+6. Final Model Selection
 
 ---
 
@@ -180,10 +198,11 @@ Telecommunication-Customer-Churn-Prediction/
 Clone the repository and install the required Python packages.
 
 ```bash
-git clone (https://github.com/HtooAungKha/Telecommunication-Customer-Churn-Prediction.git)
-cd telco-churn-project
+git clone https://github.com/HtooAungKha/Telecommunication-Customer-Churn-Prediction.git
 
-pip install -r requirements.txt
+cd Telecommunication-Customer-Churn-Prediction
+
+pip3 install -r requirements.txt
 ```
 
 ---
