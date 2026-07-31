@@ -10,9 +10,11 @@
 
 ## About the Project
 
-Customer churn is a common problem for telecommunication companies because losing customers means losing revenue. In this project, we are using machine learning to predict whether a customer is likely to leave the company based on their account information and the services they use.
-
 We are building several machine learning models and comparing their performance to find the one that predicts customer churn the best.
+
+Customer churn is a major challenge for telecommunication companies because losing customers leads to lost revenue. In this project, we use machine learning to predict whether a customer is likely to leave the company based on their account information and the services they use.
+
+We compare several machine learning models to find the one that gives the best prediction performance.
 ---
 
 ## Dataset
@@ -55,51 +57,67 @@ Completed:
 
 ### Notebook 2 – Data Preprocessing
 
-## Project Goals
+Completed:
 
-- Explore and understand the dataset
-- Clean and prepare the data
-- Train multiple machine learning models
-- Compare model performance
-- Find the features that have the biggest impact on customer churn
+- Cleaned the `TotalCharges` column
+- Removed unnecessary columns
+- Encoded the target variable
+- Split the dataset into training, validation, and test sets
+- Encoded categorical features
+- Scaled numerical features
+- Saved the processed datasets
+- Saved the preprocessing pipeline
 
 ---
 
 ### Notebook 3 – Model Training
 
-In Progress
+Completed:
 
-Models to be trained:
-
-- Logistic Regression
-- Decision Tree
-- Random Forest
-- Multi-Layer Perceptron (MLP)
-- LSTM (if time allows)
+- Loaded the processed datasets
+- Trained Logistic Regression
+- Trained Decision Tree
+- Trained Random Forest
+- Trained Multi-Layer Perceptron (MLP)
+- Compared the models using the validation set
+- Saved the trained models
+- Saved the validation results
 
 ---
 
 ### Notebook 4 – Model Evaluation
 
-Planned:
+In Progress
 
-- Compare model performance
-- Generate confusion matrices
+- Evaluate the best model on the test dataset
+- Create confusion matrices
 - Plot ROC curves
 - Compare evaluation metrics
-- Select the best-performing model
+- Analyze feature importance
+- Select the final model
+
+---
+
+## Models
+
+The following models are included:
+
+- Logistic Regression
+- Decision Tree
+- Random Forest
+- Multi-Layer Perceptron (MLP)
 
 ---
 
 ## Evaluation Metrics
 
-We will evaluate each model using:
+The models are compared using:
 
 - Accuracy
 - Precision
 - Recall
 - F1-Score
-- ROC-AUC
+- ROC-AUC Score
 - Confusion Matrix
 
 ---
@@ -131,7 +149,12 @@ Telecommunication-Customer-Churn-Prediction/
 │   └── Telco-Customer-Churn.csv
 │
 ├── models/
-│   └── preprocessor.joblib
+│   ├── preprocessor.joblib
+│   ├── logistic_regression.joblib
+│   ├── decision_tree.joblib
+│   ├── random_forest.joblib
+│   ├── mlp.joblib
+│   └── validation_results.csv
 │
 ├── Notebooks/
 │   ├── 01_data_exploration.ipynb
