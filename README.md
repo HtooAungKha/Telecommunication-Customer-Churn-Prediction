@@ -87,14 +87,18 @@ Completed:
 
 ### Notebook 4 – Model Evaluation
 
-In Progress
+Completed:
 
-- Evaluate the best model on the test dataset
-- Create confusion matrices
-- Plot ROC curves
-- Compare evaluation metrics
-- Analyze feature importance
-- Select the final model
+- Loaded the trained models
+- Evaluated each model using the test dataset
+- Compared Accuracy, Precision, Recall, F1-Score, and ROC-AUC
+- Generated classification reports
+- Created confusion matrices
+- Plotted ROC curves
+- Compared model performance with charts
+- Analyzed Random Forest feature importance
+- Selected the best-performing model
+- Saved the final test results
 
 ---
 
@@ -154,7 +158,8 @@ Telecommunication-Customer-Churn-Prediction/
 │   ├── decision_tree.joblib
 │   ├── random_forest.joblib
 │   ├── mlp.joblib
-│   └── validation_results.csv
+│   ├── validation_results.csv
+│   └── test_results.csv
 │
 ├── Notebooks/
 │   ├── 01_data_exploration.ipynb
@@ -164,6 +169,7 @@ Telecommunication-Customer-Churn-Prediction/
 │
 ├── README.md
 ├── requirements.txt
+├── LICENSE
 └── .gitignore
 ```
 
