@@ -15,6 +15,7 @@ We are building several machine learning models and comparing their performance 
 Customer churn is a major challenge for telecommunication companies because losing customers leads to lost revenue. In this project, we use machine learning to predict whether a customer is likely to leave the company based on their account information and the services they use.
 
 The project follows a complete machine learning workflow, including data exploration, preprocessing, model training, hyperparameter tuning, and model evaluation.
+
 ---
 
 ## Dataset
@@ -39,7 +40,7 @@ The dataset contains information for more than 7,000 customers, including:
 
 ---
 
-## Project Progress
+## Project Notebooks
 
 ### Notebook 1 – Data Exploration
 
@@ -81,6 +82,7 @@ Completed:
 - Trained Decision Tree
 - Trained Random Forest
 - Trained Multi-Layer Perceptron (MLP)
+- Trained a Recurrent Neural Network (RNN)
 - Compared the models using the validation set
 - Performed hyperparameter tuning
 - Applied regularization techniques
@@ -115,6 +117,7 @@ The following models are included:
 - Decision Tree
 - Random Forest
 - Multi-Layer Perceptron (MLP)
+- Recurrent Neural Network (RNN)
 
 ---
 
@@ -140,7 +143,8 @@ The project follows these steps:
 3. Model Training
 4. Hyperparameter Tuning
 5. Model Evaluation
-6. Final Model Selection
+6. Model Comparison
+7. Final Model Selection
 
 ---
 
@@ -171,13 +175,14 @@ Telecommunication-Customer-Churn-Prediction/
 │   └── Telco-Customer-Churn.csv
 │
 ├── models/
-│   ├── preprocessor.joblib
-│   ├── logistic_regression.joblib
 │   ├── decision_tree.joblib
-│   ├── random_forest.joblib
+│   ├── logistic_regression.joblib
 │   ├── mlp.joblib
-│   ├── validation_results.csv
-│   └── test_results.csv
+│   ├── preprocessor.joblib
+│   ├── random_forest.joblib
+│   ├── rnn.pth
+│   ├── test_results.csv
+│   └── validation_results.csv
 │
 ├── Notebooks/
 │   ├── 01_data_exploration.ipynb
@@ -185,10 +190,10 @@ Telecommunication-Customer-Churn-Prediction/
 │   ├── 03_model_training.ipynb
 │   └── 04_model_evaluation.ipynb
 │
-├── README.md
-├── requirements.txt
+├── .gitignore
 ├── LICENSE
-└── .gitignore
+├── README.md
+└── requirements.txt
 ```
 
 ---
